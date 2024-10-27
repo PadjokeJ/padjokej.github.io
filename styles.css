@@ -47,6 +47,11 @@
         color:aliceblue
     }
 
+    a
+    {
+        font-size: 30px;
+    }
+
     h1
     {
         margin-bottom: 0;
