@@ -15,6 +15,7 @@ a
 h1
 {
     margin-bottom: 0;
+    font-size: calc(80px - 2vw);
     background: darkslategray;
     text-align: center;
     color:aliceblue
@@ -23,6 +24,7 @@ h1
 img 
 {
     border-radius: 20%;
+    width : calc(200px - 2vw);;
 }
 
 #button
