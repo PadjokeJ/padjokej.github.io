@@ -1,0 +1,47 @@
+body
+{
+    margin: 0;
+    background: rgb(36, 44, 44);
+
+    text-align: left;
+}
+
+#text-color
+{
+    color : rgb(142, 167, 167)
+}
+
+img 
+{
+    border-radius: 5% 10% 50%;
+}
+
+#tip-title
+{
+    font-size:4.5vw;
+    margin-bottom:10%;
+}
+
+#top-title
+{
+    text-transform:capitalize;
+    line-height:normal;
+    text-align:left;
+}
+
+#header-titles
+{
+    width:100%;
+    margin-left:0;
+    text-align: left;
+    float: left;
+}
+
+#header-image
+{
+    width:20%;
+    margin-right: 16px;
+    margin-bottom: 32px;
+    text-align:left;
+    float: left;
+}
