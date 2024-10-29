@@ -5,14 +5,16 @@ tagline: A roguelite game made as a school project
 description: Simple webpage made for Silva Sanctus
 ---
 
+# Silva Sanctus README
+
 ![Thumbnail](/images/SilvaSanctusThumbnail.png)
 
 ## Summary
 
 |Download|Use|Edit|
 |:---:|:---:|:---:|
-|[Windows](https://github.com/PadjokeJ/SilvaSanctus/releases/download/Beta1.10/SilvaSanctusBeta1.10.zip)| [How to download](#how-to-download)|[How to edit](#how-to)|
-|[Mac](https://github.com/PadjokeJ/SilvaSanctus/releases/download/Beta1.10/SilvaSanctusBeta1.10Mac.zip)| [How to run](#how-to-run) | [General requests](#requests)|
+|[Windows](https://github.com/PadjokeJ/SilvaSanctus/releases/download/Beta1.10/SilvaSanctusBeta1.10.zip)|[How to download](#how-to-download)|[How to edit](#how-to)|
+|[Mac](https://github.com/PadjokeJ/SilvaSanctus/releases/download/Beta1.10/SilvaSanctusBeta1.10Mac.zip)|[How to run](#how-to-run)|[General requests](#requests)|
 
 ## What is Silva Sanctus
 
