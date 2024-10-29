@@ -5,6 +5,8 @@ tagline: A roguelite game made as a school project
 description: Simple webpage made for Silva Sanctus
 ---
 
+![Thumbnail](/images/SilvaSanctusThumbnail.png)
+
 ## Summary
 
 |Download|Use|Edit|
