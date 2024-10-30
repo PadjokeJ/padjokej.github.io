@@ -14,7 +14,7 @@ h1
     text-align: center;
     color:aliceblue
 }
-img 
+#profile 
 {
     border-radius: 20%;
     width : calc(150px + 4vh);
