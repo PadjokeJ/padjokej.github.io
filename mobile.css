@@ -54,3 +54,57 @@ a
 #main-footer {
     background-color: #222222;
 }
+
+/* BUTTON FROM GITHUB */
+
+/* <button class="button-3" role="button">foo</button> */
+button {
+    appearance: none;
+    background-color: rgb(11, 36, 51);
+    border: 1px solid rgb(93, 140, 168);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: rgb(93, 140, 168);
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  button:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: rgb(5, 21, 31);
+  }
+  
+  button:focus {
+    box-shadow: rgb(5, 21, 31, .4) 0 0 0 3px;
+    outline: none;
+  }
+  
+  button:disabled {
+    background-color: rgb(145, 206, 243);
+    border-color: rgb(216, 234, 245);
+    color: rgb(216, 234, 245);
+    cursor: default;
+  }
+  
+  button:active {
+    background-color: rgb(11, 36, 51);
+    box-shadow: rgb(11, 36, 51, .2) 0 1px 0 inset;
+  }
