@@ -3,7 +3,7 @@ body
     font-size: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
-    background: darkslategray;
+    background: rgb(50, 50, 10);
     text-align: center;
     color:aliceblue
 }
