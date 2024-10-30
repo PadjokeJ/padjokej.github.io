@@ -3,7 +3,19 @@
     <head>
         <title>PADJOKEJ.dev</title>
         <link rel="icon" type="image/x-icon" href="/images/pfp.png">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" id="pagestyle" href="styles.css">
+        <script>
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) 
+            {
+                let sheet = "styles.css";
+            }
+            else
+            {
+                let sheet = "styles.css";
+            }
+            document.getElementById("pagestyle").setAttribute("href", sheet);  
+        </script>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale : 1.0">
         <p>
