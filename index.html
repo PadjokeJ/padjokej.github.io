@@ -2,16 +2,19 @@
 <html>
     <head>
         <title>PADJOKEJ.dev</title>
+        <p id="debug"></p>
         <link rel="icon" type="image/x-icon" href="/images/pfp.png">
         <link rel="stylesheet" id="pagestyle" href="styles.css">
         <script>
             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) 
             {
-                let sheet = "styles.css";
+                let sheet = "mobile.css";
+                document.getElementById("debug").innerHTML = "mobile client";
             }
             else
             {
-                let sheet = "mobile.css";
+                document.getElementById("debug").innerHTML = "pc client";
+                let sheet = "styles.css";
             }
             document.getElementById("pagestyle").setAttribute("href", sheet);  
         </script>
