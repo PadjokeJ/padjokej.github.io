@@ -3,9 +3,9 @@ body
     font-size: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
-    background: rgb(50, 50, 10);
+    background: rgb(15, 70, 80);
     text-align: center;
-    color:aliceblue
+    color:aliceblue;
 }
 a
 {
@@ -17,7 +17,6 @@ h1
     font-size: 80px;
     background: darkslategray;
     text-align: center;
-    color:aliceblue
 }
 img 
 {
