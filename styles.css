@@ -15,14 +15,13 @@ h1
     margin-bottom: 0;
     font-size: 35px;
     text-align: center;
-    
 }
 
 @media (prefers-color-scheme: dark)
 {
     body
     {
-        background: linear-gradient(to bottom, rgb(15, 15, 20), rgb(5, 5, 10));
+        background-image: linear-gradient(to bottom, rgb(15, 15, 20), rgb(5, 5, 10));
         color: aliceblue
     }
     h1
