@@ -1,7 +1,13 @@
+html, body
+{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
 body
 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0;
     background: darkslategray;
     text-align: center;
     color:aliceblue
@@ -9,15 +15,46 @@ body
 h1
 {
     margin-bottom: 0;
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
     color:aliceblue
+}
+#content
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.text-img-container
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.text-img-container img
+{
+    max-width: 200px;
+    height: auto;
+    margin: 0;
+}
+#description
+{
+    max-width: 400px;
+    margin-left: 10px;
+    text-align: left;
 }
 #profile 
 {
     border-radius: 20%;
-    width : calc(150px + 4vh);
 }
+
+
 #button
 {
     border-radius: 25px;
@@ -48,6 +85,8 @@ a
 #main-footer {
     background-color: #222222;
 }
+
+
 
 
 /* BUTTON FROM GITHUB */
