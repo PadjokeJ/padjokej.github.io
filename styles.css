@@ -22,13 +22,16 @@ h1
 {
     body
     {
-        background: rgb(5, 5, 10);
+        background: linear-gradient(to bottom, rgb(15, 15, 20), rgb(5, 5, 10));
         color: aliceblue
     }
     h1
     {
         color:aliceblue;
     }
+    #main-footer {
+        background-color: #000000;
+      }
 }
 @media (prefers-color-scheme: light)
 {
@@ -44,6 +47,9 @@ h1
     #profile
     {
         border: solid 5px rgb(15, 70, 80);
+    }
+    #main-footer {
+        background-color: #222222;
     }
 }
 
@@ -87,7 +93,7 @@ h1
 {
     border-radius: 25px;
     border: 2px solid rgb(93, 140, 168);
-    background: rgb(11, 36, 51);
+    background: linear-gradient(to bottom right, rgb(11, 36, 51), rgb(20, 20, 35));
     padding: 20px; 
     width: 200px;
     height: 150px;
@@ -110,9 +116,7 @@ a
     float: none;
 }
 
-#main-footer {
-    background-color: #222222;
-}
+
 
 
 
