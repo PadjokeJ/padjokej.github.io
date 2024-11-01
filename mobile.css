@@ -10,9 +10,7 @@ body
   font-size: 25px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 0;
-  background: rgb(15, 70, 80);
   text-align: center;
-  color:aliceblue;
 }
 a
 {
@@ -30,6 +28,34 @@ h1
   width : 50vw;
 }
 
+@media (prefers-color-scheme: dark)
+{
+    body
+    {
+        background: rgb(5, 5, 10);
+        color: aliceblue
+    }
+    h1
+    {
+        color:aliceblue;
+    }
+}
+@media (prefers-color-scheme: light)
+{
+    body
+    {
+        background: aliceblue;
+        color: rgb(5, 5, 10)
+    }
+    h1
+    {
+        color:rgb(5, 5, 10);
+    }
+    #profile
+    {
+        border: solid 5px rgb(15, 70, 80);
+    }
+}
 
 
 #description
