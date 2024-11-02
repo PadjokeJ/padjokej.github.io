@@ -62,29 +62,42 @@ h1
       background-color: #222222;
     }
 }
-
+.text-img-container
+{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding: 20px;
+}
 
 #description
 {
   max-width: 80vw;
   margin: 0 auto;
+  margin-bottom: 60px;
   padding: 20px;
   text-align: center;
 }
 
 .buttons-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  padding: 30px;
 }
 
 .menu-button a
 {
   border-radius: 30px;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   border: 8px solid rgb(93, 140, 168);
   background: linear-gradient(to bottom right, rgb(11, 36, 51), rgb(20, 20, 35));
-  padding: 20px; 
+  padding: 15px; 
   width: 400px;
   height: 300px;
+  line-height: 2.5;
 }
 
 a
@@ -104,7 +117,10 @@ a
   padding-bottom: 10px;
   float: none;
 }
-
+#more-to-come
+{
+  padding: 40px;
+}
 
 
 #content
