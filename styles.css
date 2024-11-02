@@ -87,8 +87,20 @@ h1
     border-radius: 20%;
 }
 
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+.menu-button 
+{
+    transition: transform 0.3s ease;
+}
+.menu-button:hover 
+{
+  transform: translateY(-10px);
+}
 
-#button
+.menu-button a
 {
     border-radius: 25px;
     border: 2px solid rgb(93, 140, 168);
@@ -97,6 +109,7 @@ h1
     width: 200px;
     height: 150px;
 }
+
 a
 {
     color: rgb(93, 140, 168); 

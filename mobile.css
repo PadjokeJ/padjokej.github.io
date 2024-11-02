@@ -72,7 +72,19 @@ h1
   text-align: center;
 }
 
-#button
+.buttons-container {
+  display: flex;
+  justify-content: space-between; /* Aligns items with space between them */
+}
+.menu-button
+{
+  transition: transform 0.3s ease;
+}
+.menu-button:hover
+{
+  transform: translateY(-10px);
+}
+.menu-button a
 {
   border-radius: 30px;
   margin-top: 20px;
