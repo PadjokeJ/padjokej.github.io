@@ -64,11 +64,11 @@ The game should then launch
 I have tried to fix the file for macOS.  
 If you get a warning while trying to run the game, go to
 `System Settings`
-:arrow_right:
+➡️
 `Privacy and Security`
-:arrow_right:
+➡️
 scroll until you see `"SilvaSanctusBeta1.10" is blocked`
-:arrow_right:
+➡️
 click on `Open Anyway`  
 
 ## Controls
