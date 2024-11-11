@@ -74,7 +74,6 @@ h1
 {
   max-width: 80vw;
   margin: 0 auto;
-  margin-bottom: 60px;
   padding: 20px;
   text-align: center;
 }
@@ -114,7 +113,7 @@ a
 
 #footer-info {
   text-align: center;
-  color: #666;
+  color: #777;
   padding-bottom: 10px;
   float: none;
 }
