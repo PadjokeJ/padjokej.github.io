@@ -4,4 +4,3 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     sheet = "mobile.css";
     document.getElementById("pagestyle").setAttribute("href", sheet);
 }
-document.body.getElementById("content").style.opacity = 1;
