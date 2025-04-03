@@ -8,3 +8,4 @@ else
     sheet = "styles.css";
 }
 document.getElementById("pagestyle").setAttribute("href", sheet);
+document.getElementById("content").style.opacity = 1;
