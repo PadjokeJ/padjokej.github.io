@@ -91,7 +91,9 @@ h1
 
 .buttons-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 5em;
 }
 .menu-button 
 {
