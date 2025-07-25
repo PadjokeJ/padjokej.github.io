@@ -32,11 +32,11 @@ h3
 {
     body
     {
-        color: --main_col;
+        color: var(--main_col);
     }
     h1
     {
-        color:--main_col;
+        color: var(--main_col);
     }
     #content {
         background-image: linear-gradient(to bottom, rgb(15, 15, 20), rgb(5, 5, 10));
@@ -49,12 +49,12 @@ h3
 {
     body
     {
-        background: --main_col;
-        color: --back_col;
+        background: var(--back_col);
+        color: var(--main_col);
     }
     h1
     {
-        color:--back_col;
+        color: var(--main_col);
     }
     #profile
     {
