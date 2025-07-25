@@ -1,0 +1,25 @@
+{
+    "Projects" : [
+        {
+            "Id" : "silva",
+            "Title" : "Silva Sanctus",
+            "Description" : "Silva Sanctus is a project made with Unity, as a swiss maturity project. It is a roguelite game made in 8 months.",
+            "Image" : "SilvaSanctusThumbnail.png",
+            "URL" : "https://padjokej.dev/TM"
+        },
+        {
+            "Id" : "miniflog",
+            "Title" : "MiniFlog",
+            "Description" : "MiniFlog is a puzzle game made with Unity for the GMTK game jam. It was made in under 48 hours.",
+            "Image" : "miniflog.png",
+            "URL" : "https://padjokej.itch.io/miniflog"
+        },
+        {
+            "Id" : "gamblersfallacy",
+            "Title" : "Gambler's Fallacy",
+            "Description" : "Gambler's Fallacy is a minecraft mod that adds slot machines and a weapon based on random chance.",
+            "Image" : "gamblers.png",
+            "URL" : "https://modrinth.com/mod/gamblers-fallacy"
+        }
+    ]
+}
