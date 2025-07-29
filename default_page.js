@@ -9,8 +9,12 @@ footerText.id = "footer-info";
 footerText.innerHTML = "Made with ❤️ in 🇨🇭";
 footerText.style.fontWeight = "bold";
 
-footerDiv.appendChild(footerText);
-footerEl.appendChild(footerDiv);
+const sourceLink = document.createElement("a");
+sourceLink.id = "footer-source";
+sourceLink.href = `https://github.com/PadjokeJ/padjokej.github.io/tree/main${window.location.pathname}`;
+sourceLink.innerHTML = "See source";
 
-document.body.appendChild(footerEl)
-console.log("Footer text generated")
+footerDiv.appendChild(footerText);
+footerText.append(sourceLink);
+footerEl.appendChild(footerDiv);
+document.body.appendChild(footerEl);
