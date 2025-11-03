@@ -1,3 +1,10 @@
+def title_to_url(title):
+  url = ""
+  words = title.split(' ')
+  for word in words:
+    url += word + '+'
+  return url
+
 def get_metadata(data):
   metadatas = []
   for line in data:
@@ -55,17 +62,18 @@ def parse(data):
   metadata = get_metadata(data)
   header = treat_metadata(metadata)
   article = parse_article(data)
-  
+  url = title_to_url(header["title"])
+
   html = []
   with open("builder/template.html", 'r') as f:
     html = f.readlines()
 
-  page = insert_data(html, header, article)
+  page = insert_data(html, header, article, url)
   
   with open("blog/test.html", 'w') as f:
     f.write(page)
   
-def insert_data(html, header, article):
+def insert_data(html, header, article, url):
   page = ""
   for line in html:
     page += line
@@ -74,7 +82,7 @@ def insert_data(html, header, article):
   for line in article:
     body += line
 
-  page = page.format(title = header["title"], description = header["description"], content = body, url = "change this later")
+  page = page.format(title = header["title"], description = header["description"], content = body, url = url)
   return page
 
 if __name__ == "__main__":
