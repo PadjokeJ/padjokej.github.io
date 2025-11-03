@@ -34,6 +34,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latese
     needs: web-build
+    permissions:
+      pages: write
+      id-token: write
     steps:
       - name: deploy
         uses: actions/deploy-pages@v4
