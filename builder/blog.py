@@ -1,3 +1,5 @@
+import os
+
 def title_to_url(title):
   url = ""
   words = title.split(' ')
@@ -70,7 +72,8 @@ def parse(data):
 
   page = insert_data(html, header, article, url)
   
-  with open("blog/test.html", 'w') as f:
+  os.mkdir(url)
+  with open("blog/" + url + "/index.html", 'w') as f:
     f.write(page)
   
 def insert_data(html, header, article, url):
@@ -82,7 +85,7 @@ def insert_data(html, header, article, url):
   for line in article:
     body += line
 
-  page = page.format(title = header["title"], description = header["description"], content = body, url = url)
+  page = page.format(title = header["title"], description = header["description"], content = body, url = "https://padjokej.dev/blog/" + url)
   return page
 
 if __name__ == "__main__":
