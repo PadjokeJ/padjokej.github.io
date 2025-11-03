@@ -5,7 +5,7 @@ def title_to_url(title):
   words = title.split(' ')
   for word in words:
     url += word + '+'
-  return url
+  return url[:-1]
 
 def get_metadata(data):
   metadatas = []
@@ -72,7 +72,7 @@ def parse(data):
 
   page = insert_data(html, header, article, url)
   
-  os.mkdir(url)
+  os.mkdir("blog/" + url)
   with open("blog/" + url + "/index.html", 'w') as f:
     f.write(page)
   
