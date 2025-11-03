@@ -29,6 +29,9 @@ jobs:
         run: ./builder/cleanup.sh
   deploy:
     name: Deploy
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latese
     needs: web-build
     steps:
