@@ -65,18 +65,20 @@ def parse(data):
   header = treat_metadata(metadata)
   article = parse_article(data)
   url = title_to_url(header["title"])
+  
+  buildtime = datetime.datetime.now().strftime("%Y-%m-%d @ %H:%M")
 
   html = []
   with open("builder/template.html", 'r') as f:
     html = f.readlines()
 
-  page = insert_data(html, header, article, url)
+  page = insert_data(html, header, article, url, buildtime)
   
   os.mkdir("blog/" + url)
   with open("blog/" + url + "/index.html", 'w') as f:
     f.write(page)
   
-def insert_data(html, header, article, url):
+def insert_data(html, header, article, url, buildtime):
   page = ""
   for line in html:
     page += line
@@ -85,7 +87,7 @@ def insert_data(html, header, article, url):
   for line in article:
     body += line
 
-  page = page.format(title = header["title"], description = header["description"], content = body, url = "https://padjokej.dev/blog/" + url)
+  page = page.format(title = header["title"], description = header["description"], content = body, url = "https://padjokej.dev/blog/" + url, generated_at = buildtime, written_at = header["date"])
   return page
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
 > !title        "Creating a Custom Blog Builder"
 > !author       "PadjokeJ"
 > !description  "Using python to parse a markdown document to make a blog"
-
+> !date         "November 3 - 2025"
 <article>
 This is a test body.
 
