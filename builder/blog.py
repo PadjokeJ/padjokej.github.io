@@ -28,6 +28,9 @@ def treat_metadata(metadata):
     if line.startswith("!description"):
       description = line[line.find('"') + 1: -1]
       header["description"] = description
+    if line.startswith("!date"):
+      date = line[line.find('"') + 1 : -1]
+      header["date"] = date
   return header
 
 def count_range(data):
