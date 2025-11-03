@@ -30,9 +30,11 @@ jobs:
 
       - name: cleanup
         run: ./builder/cleanup.sh
-        
+         
       - name: upload
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./
   deploy:
     name: Deploy
     environment:
