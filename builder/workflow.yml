@@ -1,0 +1,36 @@
+name: build and deploy
+
+on: 
+  push:
+    branches:
+      - main
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  web-build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: setup python
+        uses: actions/setup-python@v5
+        with: 
+          python-version: '3.10'
+
+      - name: build blog
+        run: python ./builder/blog.py
+
+      - name: cleanup
+        run: ./builder/cleanup.sh
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latese
+    needs: web-build
+    steps:
+      - name: deploy
+        uses: actions/deploy-pages@v4
