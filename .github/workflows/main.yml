@@ -30,6 +30,9 @@ jobs:
 
       - name: cleanup
         run: ./builder/cleanup.sh
+        
+      - name: upload
+        uses: actions/upload-pages-artifacts@v3
   deploy:
     name: Deploy
     environment:
@@ -41,5 +44,6 @@ jobs:
       pages: write
       id-token: write
     steps:
+      
       - name: deploy
         uses: actions/deploy-pages@v4
