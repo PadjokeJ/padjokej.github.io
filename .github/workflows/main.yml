@@ -25,6 +25,9 @@ jobs:
       - name: build blog
         run: python ./builder/blog.py
 
+      - name: build cv
+        run: python ./builder/cv.py
+
       - name: authorize cleanup
         run: chmod +x ./builder/cleanup.sh
 

@@ -1,0 +1,25 @@
+{
+  "jobs": [
+    {
+      "name": "Lifeschool Lausanne",
+      "position": "IT manager and website developer",
+      "link": "https://lifeschool-lausanne.ch",
+      "start": "2025-05-01",
+      "end": "ongoing"
+    },
+    {
+      "name": "Chocopoly",
+      "position": "Logistics manager",
+      "link": "https://chocopoly.ch",
+      "start": "2025-10-08",
+      "end": "ongoing"
+    },
+    {
+      "name": "EPFL",
+      "position": "Bachelor in Informatics",
+      "link": "https://epfl.ch",
+      "start": "2025-09-08",
+      "end": "ongoing"
+    }
+  ]
+}

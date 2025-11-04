@@ -27,6 +27,11 @@ h3
 {
     font-size: 25px;
 }
+pre {
+    display: block;
+    justify-content: left;
+    align-items: start;
+}
 
 @media (prefers-color-scheme: dark)
 {
