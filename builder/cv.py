@@ -55,8 +55,10 @@ if __name__ == "__main__":
   formatted.reverse()
 
   html = "<pre><code>"
+  html += "git @ padjokej.dev $ \n"
   for x in formatted:
     html += x + '\n'
+  html += "git @ padjokej.dev $ \n"
   html += "</code></pre>"
   
   
