@@ -55,10 +55,10 @@ if __name__ == "__main__":
   formatted.reverse()
 
   html = "<pre><code>"
-  html += "git @ padjokej.dev $ \n"
+  html += "git@padjokej.dev: Life$ git log\n"
   for x in formatted:
     html += x + '\n'
-  html += "git @ padjokej.dev $ \n"
+  html += "git@padjokej.dev: Life$ <span style=\"animation: blink 1s infinite\">|</span>\n"
   html += "</code></pre>"
   
   
