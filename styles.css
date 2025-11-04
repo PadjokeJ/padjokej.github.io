@@ -209,3 +209,18 @@ code {
     margin-left: 20px;
     color: rgb(38, 45, 54);
 }
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+}
