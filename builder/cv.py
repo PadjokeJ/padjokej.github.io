@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     rand = os.urandom(8).hex()
 
-    job_block = f"<span style=\"color: #10ff42;\">{rand[0:8]}</span> - <span style=\"color: #4210ff;\">({d_sta.strftime("%d/%m/%Y")} - {d_end})</span> {pos} - <a href=\"{link}\" style=\"color: #aaaaaa;\">{name}</a>"
+    job_block = f"<span style=\"color: #10ff42;\">{rand[0:8]}</span> - <span style=\"color: #4210ff;\">({d_sta.strftime('%d/%m/%Y')} - {d_end})</span> {pos} - <a href=\"{link}\" style=\"color: #aaaaaa;\">{name}</a>"
 
     pos_starts.append(d_sta)
     pos_ends.append(d_end)
