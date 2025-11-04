@@ -6,7 +6,7 @@ if __name__ == "__main__":
   with open("src/cv/data.json", 'r') as f:
     data = json.load(f)
   
-  commit = "<strong>*</strong>"
+  commit = "<strong style=\"color: #ffffff;\">*</strong>"
   branch = "<strong>|/</strong>"
   nothin = "<strong>|</strong>"
 
@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     rand = os.urandom(8).hex()
 
-    job_block = f"{rand[0:8]} - ({d_sta} - {d_end}) {pos} @ <a href=\"{link}\">{name}</a>"
+    job_block = f"<span style=\"color: #10ff42;\">{rand[0:8]}</span> - ({d_sta} - {d_end}) {pos} - <a href=\"{link}\" style=\"color: #aaaaaa;\">{name}</a>"
 
     pos_starts.append(d_sta)
     pos_ends.append(d_end)
