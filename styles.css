@@ -27,6 +27,12 @@ h3
 {
     font-size: 25px;
 }
+
+pre {
+    padding: 20px;
+    border: 4px solid var(--blue);
+    border-radius: 20px;
+}
 code {
     display: block;
     justify-content: left;
