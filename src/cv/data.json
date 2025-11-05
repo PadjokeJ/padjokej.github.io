@@ -1,6 +1,13 @@
 {
   "jobs": [
     {
+      "name": "Marcelin Gymnasium",
+      "position": "Studies in Physics",
+      "link": "https://gymnase-morges.ch",
+      "start": "2022-09-20",
+      "end": "2025-07-20"
+    },
+    {
       "name": "Lifeschool Lausanne",
       "position": "IT manager and website developer",
       "link": "https://lifeschool-lausanne.ch",
