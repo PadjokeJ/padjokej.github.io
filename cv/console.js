@@ -1,5 +1,5 @@
 function echo(text) {
-  let t_add = "\n bash: command not found -> stay tuned for updates!";
+  let t_add = "\n bash: command not found -> stay tuned for updates!\n";
   if (text == "git log") {
     t_add = "\n" + document.getElementById("gitlog").innerHTML;
   }
