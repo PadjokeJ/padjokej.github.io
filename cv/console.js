@@ -1,5 +1,9 @@
 function echo(text) {
-  document.getElementById("console").innerHTML += "\ncommand not found -> stay tuned for updates!\n"
+  let t_add = "\n bash: command not found -> stay tuned for updates!";
+  if (text == "git log") {
+    t_add = document.getElementById("gitlog").innerHTML;
+  }
+  document.getElementById("console").innerHTML += t_add;
 }
 
 document.addEventListener("keydown", () => {
