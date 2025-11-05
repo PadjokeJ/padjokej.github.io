@@ -18,7 +18,7 @@ document.addEventListener("keydown", () => {
     document.getElementById("console").innerHTML += "git@padjokej.dev: Life$ ";
     let clone = el.cloneNode(true);
     let cu_clone = cu.cloneNode(true);
-    document.getElementById("user-input").remove();
+    document.getElementById("user-input").id = "old-input";
     document.getElementById("cursor").remove();
     document.getElementById("console").appendChild(clone);
     document.getElementById("console").appendChild(cu_clone);
