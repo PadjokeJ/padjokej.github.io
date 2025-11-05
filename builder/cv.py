@@ -58,7 +58,7 @@ if __name__ == "__main__":
   html += "git@padjokej.dev: Life$ git log\n"
   for x in formatted:
     html += x + '\n'
-  html += "git@padjokej.dev: Life$ <span id=\"user-input\"></span><span id=\"cursor\" style=\"animation: blink 1s infinite\">|</span>\n"
+  html += "git@padjokej.dev: Life$ <span id=\"user-input\"></span><span id=\"cursor\" style=\"animation: blink 1s infinite\">|</span>"
   html += "</code></pre>"
   
   

@@ -1,5 +1,5 @@
 function echo(text) {
-  document.getElementById("console").innerHTML += "command not found -> stay tuned for updates!\n"
+  document.getElementById("console").innerHTML += "\ncommand not found -> stay tuned for updates!\n"
 }
 
 document.addEventListener("keydown", () => {
