@@ -8,6 +8,7 @@ if __name__ == "__main__":
   
   commit = "<strong style=\"color: #ffaaff;\">*</strong>"
   branch = "<strong style=\"color: #aa6262;\">|/</strong>"
+  merge  = "<strong style=\"color: #aa6262;\">|\\</strong>"
   nothin = "<strong style=\"color: #aa6262;\">|</strong>"
 
   positions  = []
@@ -49,7 +50,8 @@ if __name__ == "__main__":
       current_branches -= 1
       formatted.append(f"{commit} {sorted_pos[i]}")
     if pos_ends[i - 1] != "ongoing" and pos_ends[i - 1] > pos_starts[i]:
-      formatted.append((nothin + ' ') * (current_branches - 1) + "<strong>|\\</strong>")
+      current_branches -= 1
+      formatted.append((nothin + ' ') * (current_branches - 1) + merge)
 
   
   formatted.reverse()
