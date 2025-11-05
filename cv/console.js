@@ -23,4 +23,4 @@ document.addEventListener("keydown", () => {
     document.getElementById("console").appendChild(clone);
     document.getElementById("console").appendChild(cu_clone);
   }
-}
+});
