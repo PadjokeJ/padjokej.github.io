@@ -1,5 +1,5 @@
 function echo(text) {
-  document.getElementById("console").innerHTML += "\ncommand not found -> stay tuned for updates!\n"
+  document.getElementById("console").innerHTML += "command not found -> stay tuned for updates!\n"
 }
 
 document.addEventListener("keydown", () => {
@@ -19,8 +19,9 @@ document.addEventListener("keydown", () => {
     let clone = el.cloneNode(true);
     let cu_clone = cu.cloneNode(true);
     document.getElementById("user-input").remove();
-    document.getElementById("cursor").remove;
+    document.getElementById("cursor").remove();
     document.getElementById("console").appendChild(clone);
     document.getElementById("console").appendChild(cu_clone);
+    document.getElementById("user-input").innerHTML = "";
   }
 });
