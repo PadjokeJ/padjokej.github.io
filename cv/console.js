@@ -9,9 +9,9 @@ document.addEventListener("keydown", () => {
     document.getElementById("user-input").innerHTML += k;
   } else if (k == "Backspace") {
     if (user_text.length > 0) {
-      document.getElementById("user-input").innerHTML = user_text.substring(0, user_text.length - 2);
+      document.getElementById("user-input").innerHTML = user_text.substring(0, user_text.length - 1);
     }
-  } else if (k == "Home") {
+  } else if (k == "Enter") {
     echo(user_text);
     let el = document.getElementById("user-input");
     let cu = document.getElementById("cursor");
