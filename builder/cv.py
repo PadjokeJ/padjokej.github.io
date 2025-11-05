@@ -56,8 +56,10 @@ if __name__ == "__main__":
 
   html = "<pre><code id=\"console\">"
   html += "git@padjokej.dev: Life$ git log\n"
+  html += "<span id=\"gitlog\">"
   for x in formatted:
     html += x + '\n'
+  html += "</span>"
   html += "git@padjokej.dev: Life$ <span id=\"user-input\"></span><span id=\"cursor\" style=\"animation: blink 1s infinite\">|</span>"
   html += "</code></pre>"
   
