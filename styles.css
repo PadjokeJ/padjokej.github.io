@@ -263,3 +263,22 @@ code {
 .navlink {
   text-decoration: none;
 }
+
+.navmenu {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .navul {
+    display: block;
+  }
+  .navli {
+    display: none;
+  }
+  .navli-show {
+    display: block;
+  }
+  .navmenu {
+    display: block;
+  }
+}
