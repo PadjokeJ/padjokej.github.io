@@ -19,7 +19,7 @@ footerText.append(sourceLink);
 footerEl.appendChild(footerDiv);
 document.body.appendChild(footerEl);
 
-const navbarToggle = document.getElementbyId("burgermenu");
+const navbarToggle = document.getElementById("burgermenu");
 
 navbarToggle.addEventListener("click", () => {
   let all = document.getElementsByClassName("navli");
