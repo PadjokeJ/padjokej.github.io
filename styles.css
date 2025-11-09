@@ -248,6 +248,7 @@ code {
 }
 
 .navhome {
+  display: flex;
   padding: 5px;
   padding-right: 15px;
   padding-left: 8px;
@@ -266,6 +267,8 @@ code {
 
 .navmenu {
   display: none;
+  width: 32px;
+  height: 32px;
 }
 
 @media (max-width: 1000px) {
