@@ -66,12 +66,16 @@ if __name__ == "__main__":
   html += "</code></pre>"
   
   
+  with open("src/nav.html", 'r') as f:
+    html_nav = ""
+    for line in f.readlines():
+      html_nav += line
   with open("src/cv/cv.html", 'r') as f:
     html_cv = ""
     for line in f.readlines():
       html_cv += line
 
-  html_cv = html_cv.format(content= html, generated_at= datetime.now().strftime("%Y-%m-%d @ %H:%M"))
+  html_cv = html_cv.format(content= html, generated_at= datetime.now().strftime("%Y-%m-%d @ %H:%M"), navbar= html_nav)
   
   with open("cv/index.html", 'w') as f:
     f.write(html_cv)
