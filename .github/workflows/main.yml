@@ -22,6 +22,9 @@ jobs:
         with: 
           python-version: '3.10'
 
+      - name: build navigation bar
+        run: python ./builder/navbar.py
+
       - name: build blog
         run: python ./builder/blog.py
 
