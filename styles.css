@@ -235,11 +235,12 @@ code {
 
   background-color: #000000;
 
-  border: solid 2px;
-  border-color: --blue;
-  border-radius: 0 0 5px 5px;
-  
-  width: 100%;
+  border: solid;
+  border-color: rgb(93, 140, 168);
+  border-radius: 0 0 15px 15px;
+  border-width: 0 0 3px;
+
+  width: calc(100% - 14px);
   z-index: 1000;
 }
 
