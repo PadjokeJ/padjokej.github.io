@@ -18,7 +18,6 @@ def gen_nav():
   
   navbar += "<ul class=\"navul\">\n"
   navbar += "<li class=\"navhome\"><img class=\"navmenu\" src=\"/images/menu.svg\"><a href=\"/#\" class=\"navlink\">PadjokeJ</a></li>\n"
-  navbar += "<img class=\"navmenu\" src=\"/images/menu.svg\">\n"
   
   for el in pages:
     navbar += f"<li class=\"navli\"><a href=\"{el['link']}\" class=\"navlink\">{el['title']}</a></li>\n"
