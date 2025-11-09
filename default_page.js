@@ -25,6 +25,6 @@ navbarToggle.addEventListener("click", () => {
   let all = document.getElementsByClassName("navli");
 
   for (navli in all) {
-    navli.classList.toggle("navli-down");
+    navli.classList.toggle("navli-show");
   }
 });
