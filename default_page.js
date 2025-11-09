@@ -24,7 +24,7 @@ const navbarToggle = document.getElementById("burgermenu");
 navbarToggle.addEventListener("click", () => {
   let all = document.getElementsByClassName("navli");
 
-  for (navli in all) {
-    navli.classList.toggle("navli-show");
+  for (navli in all.length) {
+    all.item(navli).classList.toggle("navli-show");
   }
 });
