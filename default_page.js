@@ -18,3 +18,13 @@ footerDiv.appendChild(footerText);
 footerText.append(sourceLink);
 footerEl.appendChild(footerDiv);
 document.body.appendChild(footerEl);
+
+const navbarToggle = document.getElementbyId("burgermenu");
+
+navbarToggle.addEventListener("click", () => {
+  let all = document.getElementsByClassName("navli");
+
+  for (navli in all) {
+    navli.classList.toggle("navli-down");
+  }
+});
