@@ -2,6 +2,8 @@
     --main_col : aliceblue;
     --back_col : rgb(5, 5, 10);
     --blue     : rgb(93, 140, 168);
+
+    scroll-behavior: smooth;
 }
 
 html, body
