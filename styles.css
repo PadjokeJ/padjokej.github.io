@@ -285,10 +285,17 @@ code {
     display: block;
   }
   .navli {
-    display: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 0.2s ease;
+    overflow: hidden;
   }
   .navli-show {
-    display: block;
+    height: 1.5em;
+    padding: 5px;
   }
   .navmenu {
     display: block;
