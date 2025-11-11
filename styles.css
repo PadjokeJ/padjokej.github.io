@@ -40,6 +40,7 @@ code {
     justify-content: left;
     text-align: left;
     align-items: start;
+    white-space: pre-wrap;
 }
 
 @media (prefers-color-scheme: dark)
