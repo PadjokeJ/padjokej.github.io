@@ -144,7 +144,7 @@ code {
     margin-left: 10px;
     text-align: left;
 
-    box-shadow: var(--bg2) 2px 2px 40px, inset var(--bg2) -4px -4px 5px,;
+    box-shadow: var(--bg2) 2px 2px 40px, inset var(--bg2) -4px -4px 5px;
 }
 #profile 
 {
