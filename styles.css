@@ -17,6 +17,7 @@ body
 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
+    color: var(--main_col);
 }
 h1
 {
@@ -43,45 +44,39 @@ code {
     white-space: pre-wrap;
 }
 
-@media (prefers-color-scheme: dark)
-{
-    body
-    {
-        color: var(--main_col);
-    }
-    h1
-    {
-        color: var(--main_col);
+@media (prefers-color-scheme: dark) {
+    body {
+        --main_col: #FFFFFF;
+        --back_col: #05050A;
     }
     #content {
         background-image: linear-gradient(to bottom, rgb(15, 15, 20), rgb(5, 5, 10));
     }
     #main-footer {
         background-color: #000000;
-      }
+    }
+    .project {
+        background: linear-gradient(to bottom right, rgb(11, 36, 51), rgb(20, 20, 35));
+    }
 }
 @media (prefers-color-scheme: light)
 {
-    body
-    {
-        background: var(--back_col);
-        color: var(--main_col);
+    body {
+        --main_col: #05050A;
+        --back_col: #FFFFFF;
     }
-    h1
-    {
-        color: var(--main_col);
-    }
-    #profile
-    {
+    #profile {
         border: solid 5px rgb(15, 70, 80);
     }
     #main-footer {
-        background-color: #222222;
+        background-color: #eeeeee;
+    }
+    .project {
+        background: linear-gradient(to bottom right, rgb(244, 219, 204), rgb(235, 235, 220));
     }
 }
 
-#content
-{
+#content {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -158,7 +153,6 @@ code {
     border: 2px solid var(--blue);
     border-radius: 25px;
 
-    background: linear-gradient(to bottom right, rgb(11, 36, 51), rgb(20, 20, 35));
 
     text-decoration: none;
     color: var(--blue);
