@@ -70,7 +70,7 @@ code {
     body {
         --main_col: #05050A;
         --back_col: #FFFFFF;
-        --bg2: #DDDDDD;
+        --bg2: #000000BB;
     }
     #profile {
         border: solid 5px rgb(15, 70, 80);
@@ -112,10 +112,14 @@ code {
     margin-right: 10px;
     margin-top: 10px;
 
-    transition: transform ease 0.2s;
+    transition: transform ease 0.2s, box-shadow ease 0.2s;
+
+    box-shadow: inset var(--bg2) -2px -2px 5px, var(--bg2) 2px 2px 20px;
 }
 .social-link:hover {
     transform: translateY(-7px);
+
+    box-shadow: inset var(--bg2) -2px -2px 5px, var(--bg2) 2px 9px 40px;
 }
 
 .text-img-container {
@@ -168,6 +172,7 @@ code {
     color: var(--blue);
 
     overflow: hidden;
+    box-shadow: inset var(--bg2) 2px 2px 5px 2px;
 }
 
 .sliding {
@@ -182,6 +187,8 @@ code {
     background-color: var(--back_col);
 
     transition: transform ease 0.2s;
+
+    box-shadow: inset var(--bg2) 2px -5px 5px, var(--bg2) 2px 2px 20px;
 }
 
 .project-title {
@@ -197,6 +204,10 @@ code {
 .project-image {
     border-radius: 20px;
     object-fit: cover;
+}
+
+#main-footer {
+    box-shadow: var(--bg2) 0 0 30px;
 }
 
 #footer-bottom {
