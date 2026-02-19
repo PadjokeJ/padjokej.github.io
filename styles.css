@@ -126,7 +126,6 @@ code {
 }
 
 .text-img-container {
-    background: var(--back_col);
     display: flex;
     align-items: center;
     margin-top: 20vh;
@@ -147,7 +146,7 @@ code {
     margin-left: 10px;
     text-align: left;
 
-    box-shadow: var(--bg2) 2px 2px 40px;
+    box-shadow: var(--bg2) 2px 2px 40px, inset var(--bg2) -4px -4px 5px,;
 }
 #profile 
 {
