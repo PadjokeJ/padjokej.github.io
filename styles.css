@@ -73,7 +73,7 @@ code {
     body {
         --main_col: #05050A;
         --back_col: #FFFFFF;
-        --bg2: #000000BB;
+        --bg2: #00000055;
     }
     #profile {
         border: solid 5px rgb(15, 70, 80);
