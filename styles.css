@@ -206,6 +206,19 @@ code {
     object-fit: cover;
 }
 
+.tech {
+  background: var(--blue);
+  border-radius: 1em;
+  padding: 3px;
+  min-width: 1.5em;
+  display: inline-flex;
+  position: absolute;
+  z-index: 100;
+  color: var(--main_col);
+  transform: translateX(-20px);
+  box-shadow: var(--bg2) 2px 12px 20px;
+}
+
 #main-footer {
     box-shadow: var(--bg2) 0 0 30px;
 }

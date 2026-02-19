@@ -9,6 +9,12 @@ function proj_button(project) {
 
     div_spawn.append(lnk);
 
+    tec = document.createElement("div");
+    tec.classList.add("tech");
+    tec.innerHTML = project.Tech;
+
+    lnk.append(tec);
+
     img = document.createElement("img");
     img.src = "images/" + project.Image;
     img.style.width = "312px";
@@ -16,7 +22,6 @@ function proj_button(project) {
     img.style.transition = "transform ease 0.2s";
     img.id = "image-" + project.Id;
     img.classList.add("project-image");
-
 
     lnk.append(img);
 
