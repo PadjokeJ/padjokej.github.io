@@ -2,6 +2,7 @@
     --main_col : aliceblue;
     --back_col : rgb(5, 5, 10);
     --blue     : rgb(93, 140, 168);
+    --bg2      : #000000;
 
     scroll-behavior: smooth;
 }
@@ -48,6 +49,7 @@ code {
     body {
         --main_col: #FFFFFF;
         --back_col: #05050A;
+        --bg2: #000000;
     }
     #content {
         background-image: linear-gradient(to bottom, rgb(15, 15, 20), rgb(5, 5, 10));
@@ -59,11 +61,11 @@ code {
         background: linear-gradient(to bottom right, rgb(11, 36, 51), rgb(20, 20, 35));
     }
 }
-@media (prefers-color-scheme: light)
-{
+@media (prefers-color-scheme: light) {
     body {
         --main_col: #05050A;
         --back_col: #FFFFFF;
+        --bg2: #DDDDDD;
     }
     #profile {
         border: solid 5px rgb(15, 70, 80);
@@ -111,17 +113,18 @@ code {
     transform: translateY(-7px);
 }
 
-.text-img-container
-{
+.text-img-container {
+    background: var(--back_col);
     display: flex;
     align-items: center;
     margin-top: 20vh;
 }
-.text-img-container img
-{
+.text-img-container img {
     max-width: 200px;
     height: auto;
     margin: 0;
+
+    box-shadow: var(--bg2) 2px 2px 40px;
 }
 #description
 {
@@ -131,6 +134,8 @@ code {
     max-width: 400px;
     margin-left: 10px;
     text-align: left;
+
+    box-shadow: var(--bg2) 2px 2px 40px;
 }
 #profile 
 {
