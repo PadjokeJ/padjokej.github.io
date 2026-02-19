@@ -233,7 +233,8 @@ code {
 
   position: fixed;
 
-  background-color: #000000;
+  background-color: var(--back_col);
+  box-shadow: var(--bg2) 0 0 30px;
 
   border: solid;
   border-color: rgb(93, 140, 168);
