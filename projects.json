@@ -23,6 +23,22 @@
             "Image" : "gamblers.png",
             "URL" : "https://modrinth.com/mod/gamblers-fallacy",
             "Tech" : "Java"
+        },
+        {
+            "Id" : "tealeaf",
+            "Title" : "Tealeaf",
+            "Description" : "Tealeaf is a minecraft mod that adds tea.",
+            "Image" : "tealeaf.webp",
+            "URL" : "https://modrinth.com/mod/tealeaf",
+            "Tech" : "Java"
+        },
+        {
+            "Id" : "jeopardy",
+            "Title" : "Jeopardy",
+            "Description" : "A quick template to make interactive jeopardy-like games.",
+            "Image" : "jeopardy.png",
+            "URL" : "https://github.com/PadjokeJ/Jeopardy",
+            "Tech" : "JS"
         }
     ]
 }
