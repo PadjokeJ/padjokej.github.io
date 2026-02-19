@@ -45,6 +45,11 @@ code {
     white-space: pre-wrap;
 }
 
+.console { 
+    background-color: var(--back_col);
+    box-shadow: var(--bg2) 2px 2px 40px 5px;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         --main_col: #FFFFFF;
@@ -210,6 +215,10 @@ code {
     margin: 0;
     margin-left: 20px;
     color: rgb(38, 45, 54);
+}
+
+footer {
+    box-shadow: var(--bg2) 0 0 30px;
 }
 
 @keyframes blink {
