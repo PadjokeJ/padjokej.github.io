@@ -27,7 +27,7 @@
         {
             "Id" : "tealeaf",
             "Title" : "Tealeaf",
-            "Description" : "Tealeaf is a minecraft mod that adds tea.",
+            "Description" : "Tealeaf is a minecraft mod that adds tea, and cute kettles.",
             "Image" : "tealeaf.webp",
             "URL" : "https://modrinth.com/mod/tealeaf",
             "Tech" : "Java"
@@ -39,6 +39,15 @@
             "Image" : "jeopardy.png",
             "URL" : "https://github.com/PadjokeJ/Jeopardy",
             "Tech" : "JS"
+        },
+        {
+            "Id" : "mp2",
+            "Title" : "EPFL MP2",
+            "Description" : "A semester project made in the CS107 class. Game that behaves as a video player.",
+            "Image" : "mp2.png",
+            "URL" : "https://github.com/PadjokeJ/MP02-JeuSurGrille",
+            "Tech" : "Java"
         }
+
     ]
 }
