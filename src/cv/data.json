@@ -27,6 +27,13 @@
       "link": "https://epfl.ch",
       "start": "2025-09-08",
       "end": "ongoing"
+    },
+    {
+      "name": "CLIC",
+      "position": "Team IT",
+      "link": "https://clic.epfl.ch",
+      "start": "2025-03-25",
+      "end": "ongoing"
     }
   ]
 }
