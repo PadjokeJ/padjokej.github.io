@@ -1,6 +1,6 @@
 const colors = {
   java: "#E11F21",
-  c-sharp: "#9D76D6",
+  csharp: "#9D76D6",
   python: "#336F9F",
   javascript: "#EFD917",
   rust: "#EF4900"
@@ -8,7 +8,7 @@ const colors = {
 
 function get_color(key) {
   let k = key.toLowerCase();
-  if (k == "c#") k = "c-sharp";
+  if (k == "c#") k = "csharp";
 
   return colors[key];
 }
