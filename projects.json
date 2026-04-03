@@ -47,6 +47,14 @@
             "Image" : "mp2.png",
             "URL" : "https://github.com/PadjokeJ/MP02-JeuSurGrille",
             "Tech" : "Java"
+        },
+        {
+            "Id" : "pyrythmo",
+            "Title" : "Rythmo Creator",
+            "Description" : "A self hosted server which allows for easy creation of dubbing text tracks, uses ffmpeg.",
+            "Image" : "pyrythmo.png",
+            "URL" : "https://rythmo.padjokej.dev/",
+            "Tech" : "Python"
         }
 
     ]
