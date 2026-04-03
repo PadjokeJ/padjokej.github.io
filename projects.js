@@ -10,7 +10,7 @@ function get_color(key) {
   let k = key.toLowerCase();
   if (k == "c#") k = "csharp";
 
-  return colors[key];
+  return colors[k];
 }
   
 
