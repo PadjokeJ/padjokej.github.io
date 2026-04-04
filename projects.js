@@ -2,7 +2,7 @@ const colors = {
   java: "#E11F21",
   csharp: "#9D76D6",
   python: "#336F9F",
-  javascript: "#EFD917",
+  js: "#EFD917",
   rust: "#EF4900"
 }
 
