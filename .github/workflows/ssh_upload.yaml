@@ -41,8 +41,8 @@ jobs:
         
       - name: Clean up old website directory
         run: |
-          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@{{ secrets.HOST }}" rm -rf website
-          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@{{ secrets.HOST }}" mkdir website
+          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" rm -rf website
+          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" mkdir website
         
       - name: Copy website into VPS
         run: scp -i ~/.ssh/id_rsa -r . $DIRECTORY
