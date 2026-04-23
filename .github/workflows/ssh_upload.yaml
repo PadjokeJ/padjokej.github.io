@@ -1,4 +1,6 @@
-on: workflow_dispatch
+on: 
+  push:
+    branches: main
 name: ssh copy into server
 
 jobs:
@@ -36,7 +38,13 @@ jobs:
           hosts="$(dig +short "$host" | grep -v '\.$' | sed -z 's|\n|,|g')$host"
           ssh-keyscan -H "$hosts" > ~/.ssh/known_hosts
         shell: bash
-      - name: Connect into VPS
+        
+      - name: Clean up old website directory
+        run: |
+          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@{{ secrets.HOST }}" rm -rf website
+          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@{{ secrets.HOST }}" mkdir website
+        
+      - name: Copy website into VPS
         run: scp -i ~/.ssh/id_rsa -r . $DIRECTORY
         shell: bash
         env:
