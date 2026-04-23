@@ -1,0 +1,45 @@
+on: workflow_dispatch
+name: ssh copy into server
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup python
+        uses: actions/setup-python@v5
+        with: 
+          python-version: '3.10'
+
+      - name: Build navigation bar
+        run: python ./builder/navbar.py
+
+      - name: Build blog
+        run: python ./builder/blog.py
+
+      - name: Build cv
+        run: python ./builder/cv.py
+
+      - name: Authorize cleanup
+        run: chmod +x ./builder/cleanup.sh
+
+      - name: Clean directory
+        run: ./builder/cleanup.sh
+        
+      - name: Create SSH keys
+        run: |
+          install -m 600 -D /dev/null ~/.ssh/id_rsa
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          host="${{ secrets.HOST }}"
+          hosts="$(dig +short "$host" | grep -v '\.$' | sed -z 's|\n|,|g')$host"
+          ssh-keyscan -H "$hosts" > ~/.ssh/known_hosts
+        shell: bash
+      - name: Connect into VPS
+        run: scp -i ~/.ssh/id_rsa -r . $DIRECTORY
+        shell: bash
+        env:
+          DIRECTORY: "${{ secrets.USER }}@${{ secrets.HOST }}:website/"
+      
+          
