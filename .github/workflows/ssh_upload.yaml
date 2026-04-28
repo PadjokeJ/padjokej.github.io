@@ -56,5 +56,6 @@ jobs:
         
       - name: Reload caddy configuration
         run: |
+          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" pwd
           ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" docker compose down website && docker compose up
           
