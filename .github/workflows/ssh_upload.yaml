@@ -39,17 +39,20 @@ jobs:
           ssh-keyscan -H "$hosts" > ~/.ssh/known_hosts
         shell: bash
         
+      - name: Copy website into VPS
+        run: |
+          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" mkdir temp
+          scp -i ~/.ssh/id_rsa -r . $DIRECTORY
+        shell: bash
+        env:
+          DIRECTORY: "${{ secrets.USER }}@${{ secrets.HOST }}:temp/"
+      
       - name: Clean up old website directory
         run: |
           ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" rm -rf website
           ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" mkdir website
+          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" cp -r temp/* website/
         
-      - name: Copy website into VPS
-        run: scp -i ~/.ssh/id_rsa -r . $DIRECTORY
-        shell: bash
-        env:
-          DIRECTORY: "${{ secrets.USER }}@${{ secrets.HOST }}:website/"
-      
       - name: Reload caddy configuration
         run: |
           ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" docker exec -it arch-website-1 caddy reload --config /etc/caddy/Caddyfile
