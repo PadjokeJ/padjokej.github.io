@@ -55,5 +55,5 @@ jobs:
         
       - name: Reload caddy configuration
         run: |
-          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" docker exec -it arch-website-1 caddy reload --config /etc/caddy/Caddyfile
+          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" docker exec arch-website-1 caddy reload --config /etc/caddy/Caddyfile
           
