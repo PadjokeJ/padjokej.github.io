@@ -50,4 +50,7 @@ jobs:
         env:
           DIRECTORY: "${{ secrets.USER }}@${{ secrets.HOST }}:website/"
       
+      - name: Reload caddy configuration
+        run: |
+          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" docker exec -it arch-website-1 caddy reload --config /etc/caddy/Caddyfile
           
