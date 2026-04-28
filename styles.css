@@ -84,6 +84,14 @@ code {
     .project {
         background: linear-gradient(to bottom right, rgb(244, 219, 204), rgb(235, 235, 220));
     }
+    .sliding {
+      backdrop-filter: blur(5px);
+      background-color: var(--bg2);
+      color: white;
+    }
+    .project-title {
+      color: white;
+    }
 }
 
 #content {
