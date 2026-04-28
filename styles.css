@@ -68,6 +68,13 @@ code {
     .project {
         background: linear-gradient(to bottom right, rgb(11, 36, 51), rgb(20, 20, 35));
     }
+    .project-title {
+        color: var(--main_col);
+    }
+
+    .sliding {
+        background-color: var(--back_col);
+    }
 }
 @media (prefers-color-scheme: light) {
     body {
@@ -194,8 +201,6 @@ code {
 
     padding: 5px;
 
-    background-color: var(--back_col);
-
     transition: transform ease 0.2s;
 
     box-shadow: inset var(--bg2) 2px -5px 5px, var(--bg2) 2px 2px 20px;
@@ -208,7 +213,6 @@ code {
     height: 20px;
 
     font-size: 20px;
-    color: var(--main_col);
 }
 
 .project-image {
