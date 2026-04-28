@@ -1,9 +1,72 @@
-function echo(text) {
-  let t_add = "\n bash: command not found -> stay tuned for updates!\n";
-  if (text == "git log") {
-    t_add = "\n" + document.getElementById("gitlog").innerHTML;
+class FileNode {
+  constructor(isDir, p, name) {
+    this.isDir = isDir;
+    if (p != null)
+      p.addChild(this);
+    this.p = p;
+    this.name = name;
   }
-  document.getElementById("console").innerHTML += t_add;
+}
+
+class Directory extends FileNode {
+  children = [];
+  constructor(p, name) {
+    super(true, p, name);
+  }
+
+  addChild(c) {
+    this.children.push(c);
+  }
+
+  path() {
+    if (this.p == null) return this.name;
+    return this.p.path() + '/' + this.name;
+  }
+}
+
+class File extends FileNode {
+  constructor(p, name) {
+    super(false, p, name);
+  }
+}
+
+const root = new Directory(null, "");
+
+console.log(root.path());
+
+const home = new Directory(root, "home");
+const user = new Directory(home, "jonatan");
+const life = new Directory(user, "Life");
+console.log(user.path());
+
+let currentPath = life;
+
+function echo(txt) {
+  echo(txt, true);
+}
+
+function echo(txt, flush) {
+  document.getElementById("console").innerHTML += '\n' + txt;
+}
+
+function execCmd(text) {
+  switch (text) {
+    case "ls":
+      currentPath.children.forEach(c => echo(c.name, false));
+      echo("");
+      break;
+    case "pwd":
+      echo(currentPath.path());
+      break;
+    case "git log":
+      echo(document.getElementById("gitlog").innerHTML);
+      break;
+    default:
+      if (text.startsWith("echo "))
+        echo(text.slice(5));
+      else
+        echo("bash: command not found -> stay tuned for updates!");
+  }
 }
 
 document.addEventListener("keydown", () => {
@@ -16,10 +79,10 @@ document.addEventListener("keydown", () => {
       document.getElementById("user-input").innerHTML = user_text.substring(0, user_text.length - 1);
     }
   } else if (k == "Enter") {
-    echo(user_text);
+    execCmd(user_text);
     let el = document.getElementById("user-input");
     let cu = document.getElementById("cursor");
-    document.getElementById("console").innerHTML += "git@padjokej.dev: Life$ ";
+    document.getElementById("console").innerHTML += "\njonatan@padjokej.dev: " + currentPath.name + "$ ";
     let clone = el.cloneNode(true);
     let cu_clone = cu.cloneNode(true);
     document.getElementById("user-input").id = "old-input";

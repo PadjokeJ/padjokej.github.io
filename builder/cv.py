@@ -57,12 +57,12 @@ if __name__ == "__main__":
   formatted.reverse()
 
   html = "<pre class=\"console\"><code id=\"console\">"
-  html += "git@padjokej.dev: Life$ git log\n"
+  html += "jonatan@padjokej.dev: Life$ git log\n"
   html += "<span id=\"gitlog\">"
   for x in formatted:
     html += x + '\n'
   html += "</span>"
-  html += "git@padjokej.dev: Life$ <span id=\"user-input\"></span><span id=\"cursor\" style=\"animation: blink 1s infinite\"></span>"
+  html += "jonatan@padjokej.dev: Life$ <span id=\"user-input\"></span><span id=\"cursor\" style=\"animation: blink 1s infinite\"></span>"
   html += "</code></pre>"
   
   
