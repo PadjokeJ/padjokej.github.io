@@ -1,7 +1,8 @@
-padjokej.dev {
+padjokej.dev:80 {
   root /srv
   file_server {
     hide .git
     hide .github
   }
 }
+
