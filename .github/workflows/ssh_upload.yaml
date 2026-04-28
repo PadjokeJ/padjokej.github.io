@@ -41,6 +41,7 @@ jobs:
         
       - name: Copy website into VPS
         run: |
+          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" rm -rf temp
           ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" mkdir temp
           scp -i ~/.ssh/id_rsa -r . $DIRECTORY
         shell: bash
