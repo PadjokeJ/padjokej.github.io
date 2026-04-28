@@ -48,14 +48,3 @@ jobs:
         env:
           DIRECTORY: "${{ secrets.USER }}@${{ secrets.HOST }}:temp/"
       
-      - name: Clean up old website directory
-        run: |
-          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" rm -rf website
-          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" mkdir website
-          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" cp -r temp/* website/
-        
-      - name: Reload caddy configuration
-        run: |
-          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" pwd
-          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" docker compose down website && docker compose up
-          
