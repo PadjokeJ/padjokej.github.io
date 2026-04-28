@@ -47,4 +47,10 @@ jobs:
         shell: bash
         env:
           DIRECTORY: "${{ secrets.USER }}@${{ secrets.HOST }}:temp/"
+
+      - name: Deploy website
+        run: |
+          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" rm -rf website/*
+          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" cp -r temp/* website
+
       
