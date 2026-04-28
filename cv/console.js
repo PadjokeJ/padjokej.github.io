@@ -83,6 +83,7 @@ document.addEventListener("keydown", () => {
     let el = document.getElementById("user-input");
     let cu = document.getElementById("cursor");
     document.getElementById("console").innerHTML += "\njonatan@padjokej.dev: " + currentPath.name + "$ ";
+    document.getElementById("console").scrollBy(0, 999);
     let clone = el.cloneNode(true);
     let cu_clone = cu.cloneNode(true);
     document.getElementById("user-input").id = "old-input";

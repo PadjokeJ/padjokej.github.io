@@ -49,6 +49,8 @@ code {
 .console { 
     background-color: var(--back_col);
     box-shadow: var(--bg2) 2px 2px 40px 5px;
+    max-height: 60vh;
+    overflow-y: scroll;
 }
 #cursor {
     border-left: var(--main_col) 1px solid;
