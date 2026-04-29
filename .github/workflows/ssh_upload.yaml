@@ -43,7 +43,7 @@ jobs:
         run: |
           ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" rm -rf temp
           ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" mkdir temp
-          rsync -i ~/.ssh/id_rsa -z -r . $DIRECTORY
+          rsync -r . $DIRECTORY
         shell: bash
         env:
           DIRECTORY: "${{ secrets.USER }}@${{ secrets.HOST }}:temp/"
