@@ -1,4 +1,5 @@
 site_name: PadjokeJ's documentation
+site_url: https://docs.padjokej.dev/
 theme:
   
   palette:
