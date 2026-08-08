@@ -1,6 +1,6 @@
 # Documentation
 
-Here you will find the documentation of my various projects
+Here you will find the documentation of my various projects. A copy of the source code of this homepage is available at <https://github.com/PadjokeJ/padjokej.github.io>
 
 ## Projects
 
